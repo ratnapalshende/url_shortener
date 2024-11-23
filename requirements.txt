@@ -6,3 +6,4 @@ gunicorn
 django-cors-headers
 dj-database-url
 whitenoise
+uvicorn
