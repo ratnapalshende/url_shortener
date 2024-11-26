@@ -143,7 +143,7 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "http://127.0.0.1:8000",  # Localhost for development
+    "https://url-shortener-r8k7.onrender.com",  # Localhost for development
     "http://localhost:3000",  # React default port
     "https://url-shortener-r8k7.onrender.com",
 ]

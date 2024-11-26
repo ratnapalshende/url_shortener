@@ -9,7 +9,7 @@ const ShortenForm = ({ setShortURL }) => {
     e.preventDefault();
     setError('');
     try {
-      const response = await axios.post('http://127.0.0.1:8000/api/shorten/', { url: longURL });
+      const response = await axios.post('https://url-shortener-r8k7.onrender.com/api/shorten/', { url: longURL });
       setShortURL(response.data.shortCode);
     } catch (err) {
       setError('Error creating short URL. Please try again.');

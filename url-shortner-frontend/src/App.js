@@ -15,7 +15,7 @@ function App() {
 
     try {
       // Make a request to your Django backend API
-      const response = await fetch('http://localhost:8000/api/shorten/', {
+      const response = await fetch('https://url-shortener-r8k7.onrender.com/api/shorten/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -25,7 +25,7 @@ function App() {
 
       if (response.ok) {
         const data = await response.json();
-        setShortenedUrl(`http://localhost:8000/api/${data.shortCode}/`);
+        setShortenedUrl(`https://url-shortener-r8k7.onrender.com/api/${data.shortCode}/`);
         setError('');
       } else {
         const data = await response.json();
