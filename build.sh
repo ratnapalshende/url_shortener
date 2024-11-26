@@ -12,4 +12,4 @@ python manage.py migrate
 cd url-shortner-frontend
 npm init -y
 npm install
-npm run build && cd .. && python manage.py runserver
+npm run build
