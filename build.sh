@@ -13,4 +13,5 @@ cd url-shortner-frontend
 npm init -y
 npm install
 npm run build
+cd ..
 python manage.py runserver
