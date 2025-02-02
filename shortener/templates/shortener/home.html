@@ -28,10 +28,10 @@
                 </form>
                 {% if short_url %}
                     <div class="mt-3">
-                        <p>Shorten URL: <a href="http://localhost:8000/{{ short_url }}" target="_blank">http://localhost:8000/{{ short_url }}</a></p>
+                        <p>Shorten URL: <a href="{{url_base}}{{ short_url }}" target="_blank">{{url_base}}{{ short_url }}</a></p>
                     </div>
                     <div class="copy-url-container">
-                        <button class="btn btn-outline-info" onclick="copyToClipboard('http://localhost:8000/{{ short_url }}')">
+                        <button class="btn btn-outline-info" onclick="copyToClipboard('{{url_base}}{{ short_url }}')">
                             Copy URL
                         </button>
                         <div class="copy-alert alert alert-success mt-2" id="copyAlert" style="display: none;">

@@ -4,6 +4,7 @@ from random import choices
 from string import ascii_letters, digits
 from django.http import Http404
 from django.contrib import messages
+from django.conf import settings
 # Create your views here.
 def home(request):
     return render(request, 'shortener/home.html')
@@ -30,6 +31,7 @@ def shorten_url(request):
             "url": url.original_url,
             "short_url": url.short_url,
             "created_at": url.created_at.isoformat(),
+            "url_base": request.build_absolute_uri('/')  # This will give you the base URL
         }
         return render(request, 'shortener/home.html', returnD)
     return render(request, 'shortener/home.html')
