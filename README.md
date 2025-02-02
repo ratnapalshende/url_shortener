@@ -71,6 +71,10 @@ To run this project locally, follow these steps:
 
 Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes.
 
+## Project Inspiration
+
+This project idea was inspired by [roadmap.sh's URL Shortening Service project](https://roadmap.sh/projects/url-shortening-service).
+
 ## License
 
 This project is licensed under the MIT License.
